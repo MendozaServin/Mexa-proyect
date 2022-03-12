@@ -9,7 +9,7 @@ import {ContactComponent} from "../pages/contact/contact.component";
 export const routes = [
   {
     path: '',
-    component: ContactComponent,
+    component: FoodComponent,
     children:[
       {path: '', component: HomeComponent},
       {path: 'food', component: FoodComponent},
