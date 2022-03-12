@@ -12,6 +12,12 @@ body{
   justify-content: center;
 }
 
+span{
+  display: flex;
+  align-items: center;
+}
+
+
 .container{
   position: relative;
   max-width: 1000px;
@@ -31,13 +37,17 @@ body{
 
 .forms .title::before{
   content: '';
-  position: absolute;
+  margin-top: 60px;
+  position: center;
   left: 0;
   bottom: 0;
   height: 5px;
   width: 70px;
   background-color: sienna;
   border-radius: 25px;
+  display: flex;
+  align-items: center;
+
 }
 
 span{
