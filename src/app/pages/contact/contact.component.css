@@ -14,7 +14,8 @@ body{
 
 span{
   display: flex;
-  align-items: center;
+  justify-content: center;
+  align-self: center;
 }
 
 
@@ -35,7 +36,7 @@ span{
   text-align: center;
 }
 
-.forms .title::before{
+/*.forms .title::before{
   content: '';
   margin-top: 60px;
   position: center;
@@ -48,11 +49,7 @@ span{
   display: flex;
   align-items: center;
 
-}
-
-span{
-  justify-content: center;
-}
+}*/
 
 .forms .data{
   margin-top: 45px;
@@ -68,7 +65,7 @@ span{
   height: 50px;
   width: 50%;
 
-  margin-top: 50px;
+  margin-top: 25px;
   border: none;
   font-size: 18px;
   font-weight: 500;
