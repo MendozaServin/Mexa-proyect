@@ -1,30 +1,21 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HomeComponent } from './home/home.component';
-import {LayoutModule} from "../layout/layout.module";
-import { ContactComponent } from './contact/contact.component';
-import { FoodComponent } from './food/food.component';
-import { DrinkComponent } from './drink/drink.component';
-import { DessertsComponent } from './desserts/desserts.component';
-import {MatCardModule} from "@angular/material/card";
-
-
+import {HomeModule} from "./home/home.module";
+import {FoodModule} from "./food/food.module";
+import {DrinkModule} from "./drink/drink.module";
+import {DessertsModule} from "./desserts/desserts.module";
+import {ContactModule} from "./contact/contact.module";
 
 @NgModule({
-  declarations: [
-    HomeComponent,
-    ContactComponent,
-    FoodComponent,
-    DrinkComponent,
-    DessertsComponent
-  ],
-  exports: [
-    HomeComponent
-  ],
+  declarations: [],
+  exports: [],
   imports: [
     CommonModule,
-    LayoutModule,
-    MatCardModule
+    HomeModule,
+    FoodModule,
+    DrinkModule,
+    DessertsModule,
+    ContactModule,
   ]
 })
 export class PagesModule { }

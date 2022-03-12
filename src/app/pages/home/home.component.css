@@ -1,0 +1,103 @@
+.content {
+  display: flex;
+  margin-left: 150px;
+  margin-right: 150px;
+
+}
+h2{
+  font-size: 60px;
+  margin: 0px;
+}
+
+
+.eslogan{
+  margin: 10px;
+  width: 70%;
+  margin-top: 100px;
+}
+
+.textos{
+  margin-top: 100px;
+  float: left;
+  width: 60%;
+}
+
+.imagen{
+  margin-top: 100px;
+  float: right;
+  width: 40%;
+}
+
+#azul{
+  color: #092CAE;
+}
+
+.content img{
+  display:block;
+  height: 500px;
+}
+
+button{
+  margin: 10px 10px 10px 10px;
+  border-width:0;
+  width: 100px;
+  height: 40px;
+  left: 80px;
+  top: 686px;
+  color: white;
+  font-weight: 700;
+  background: #092CAE;
+  border-radius: 20px;
+  margin-top: 80px;
+}
+
+button:active{
+  background: #000;
+}
+
+
+@media screen and (max-width: 858px){
+  .content {
+    display:inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+    height: 100%;
+
+  }
+
+  .textos{
+    margin-top: 80px;
+    float:none;
+    margin-right: 0px;
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  h2{
+    font-size: 50px;
+    margin: 0px;
+  }
+
+  .imagen{
+    margin-top: 0px;
+    float:none;
+    width: 100%;
+
+  }
+  .content img{
+    display:block;
+    height: 230px;
+  }
+
+  button{
+    margin: 10px 0px 0px 0px;
+    border-width:0;
+    width: 100px;
+    height: 40px;
+    left: 80px;
+    top: 0px;
+    color: white;
+    font-weight: 700;
+    background: sienna;
+    border-radius: 20px;
+  }
+}

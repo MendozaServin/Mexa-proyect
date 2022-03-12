@@ -1,14 +1,24 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {LayoutModule} from "../../layout/layout.module";
+import {HomeComponent} from "./home.component";
+import {RouterModule} from "@angular/router";
+import {MatCardModule} from "@angular/material/card";
+import {MatSlideToggleModule} from "@angular/material/slide-toggle";
+import {MatIconModule} from "@angular/material/icon";
 
 
 
 @NgModule({
-  declarations: [],
+  declarations: [HomeComponent],
+  exports: [
+    HomeComponent
+  ],
   imports: [
     CommonModule,
-    LayoutModule
+    RouterModule,
+    MatCardModule,
+    MatSlideToggleModule,
+    MatIconModule
   ]
 })
 export class HomeModule { }
