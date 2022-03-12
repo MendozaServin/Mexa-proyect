@@ -106,7 +106,6 @@ span{
 
 .datadata input{
   height: 100%;
-  width: 50%;
   padding: 0 35px;
   border: none;
   outline: none;
@@ -116,6 +115,49 @@ span{
   background-color: #C0C0C0;
 }
 
+#input1{
+  width: 48%;
+  margin-right: 15px;
+}
+
+#input2{
+  width: 48%;
+  margin-left: 15px;
+}
+
 .datadata input:is(:focus, :valid){
   border-bottom-color: #3498db;
+}
+
+@media (max-width: 1000px) {
+  .datadata input{
+    height: 100%;
+    width: 50%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid white;
+    border-top: 2px solid transparent;
+    background-color: #C0C0C0;
+  }
+
+
+  #input1{
+    width: 100%;
+    align-items: center;
+    margin-right: 0px;
+    margin-bottom: 10px;
+
+  }
+
+  .datadata{
+    margin-bottom: 100px;
+  }
+
+  #input2{
+    width: 100%;
+    align-items: center;
+    margin-left: 0px;
+    margin-top: 10px;
+  }
 }
