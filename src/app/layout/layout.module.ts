@@ -5,20 +5,22 @@ import { LayoutComponent } from './layout.component';
 import {RouterModule} from "@angular/router";
 import {RoutesModule} from "../routes/routes.module";
 import { Headerv2Component } from './headerv2/headerv2.component';
+import {Headerv2Module} from "./headerv2/headerv2.module";
+import {HeaderModule} from "./header/header.module";
 
 
 
 @NgModule({
   declarations: [
-    HeaderComponent,
-    Headerv2Component,
+    LayoutComponent
   ],
   exports: [
-    HeaderComponent
   ],
     imports: [
         CommonModule,
-        RoutesModule
+        RoutesModule,
+      Headerv2Module,
+      HeaderModule
     ]
 })
 export class LayoutModule { }
