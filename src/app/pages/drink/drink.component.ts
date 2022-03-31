@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {HttpClientService} from "../../services/backend";
 
 @Component({
   selector: 'app-drink',
@@ -7,9 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DrinkComponent implements OnInit {
 
-  constructor() { }
+  getHDrinks: any
+  getCDrink: any
+  getADrink: any
+
+  constructor(private http: HttpClientService) { }
 
   ngOnInit(): void {
+    this.getHDrinks = this.http.getHDrink();
+    this.getCDrink = this.http.getCDrink();
+    this.getADrink = this.http.getADrink();
   }
 
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {HttpClientService} from "../../services/backend";
 
 @Component({
   selector: 'app-food',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FoodComponent implements OnInit {
 
-  constructor() { }
+  getHFood: any
+  getCFood: any
 
-  ngOnInit(): void {
+  constructor(private http: HttpClientService) {
   }
 
+  ngOnInit(): void {
+    this.getHFood = this.http.getHFood();
+    this.getCFood = this.http.getCFood();
+  }
 }

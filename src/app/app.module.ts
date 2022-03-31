@@ -12,6 +12,7 @@ import {MatSlideToggleModule} from "@angular/material/slide-toggle";
 import {RoutesModule} from "./routes/routes.module";
 import {MatIconModule} from "@angular/material/icon";
 import {HomeModule} from "./pages/home/home.module";
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import {HomeModule} from "./pages/home/home.module";
     RoutesModule,
     PagesModule,
     HomeModule,
+    HttpClientModule,
 
 
     /* Material */

@@ -4,7 +4,10 @@
   <!-- Tarjeta uno -->
 
   <div class="card_one">
-    <h3>Tinga de res</h3>
+    <div *ngFor = "let hotfood of getHFood | async">
+      <h3>{{hotfood.nombre}}</h3>
+    </div>
+
     <mat-icon>add</mat-icon>
     <mat-icon>list</mat-icon>
 

@@ -3,8 +3,8 @@
 
   <!-- Tarjeta uno -->
 
-  <div class="card_one">
-    <h3>Tinga de res</h3>
+  <div class="card_one" *ngFor = "let colddrink of getCDrink | async">
+    <h3>{{colddrink.nombre}}</h3>
     <mat-icon>add</mat-icon>
     <mat-icon>list</mat-icon>
 

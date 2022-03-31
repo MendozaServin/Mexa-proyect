@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {HttpClientService} from "../../services/backend";
 
 @Component({
   selector: 'app-desserts',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DessertsComponent implements OnInit {
 
-  constructor() { }
+  getD: any
+
+  constructor(private http: HttpClientService) { }
 
   ngOnInit(): void {
+    this.getD = this.http.getD();
   }
 
 }
